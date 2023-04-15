@@ -1,0 +1,147 @@
+:root {
+  /* Primary */
+  --clr-red: hsla(0, 100%, 67%, 1);
+  --clr-orangey: hsla(40, 100%, 56%, 1);
+  --clr-teal: hsla(166, 100%, 37%, 1);
+  --blue: hsla(234, 85%, 45%, 1);
+
+  /* Gradients */
+
+  --slate-blue-bg: hsl(252, 100%, 67%, 1);
+  --royal-blue-bg: hsl(241, 81%, 54%, 1);
+
+  --circle-violet: hsla(256, 72%, 46%, 1);
+  --circle-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+  --white-neutral: hsla(0, 0%, 100%, 1);
+  --pale-blue-neutral: hsla(221, 100%, 96%, 1);
+  --lavender-neutral: hsla(241, 100%, 89%, 1);
+  --dk-gray-blue-neutral: hsla(224, 30%, 27%, 1);
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root {
+  isolation: isolate;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
+  border-bottom-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+
+.overline {
+  padding-top: 2.4rem;
+  font-size: 1.8rem;
+  color: var(--lavender-neutral);
+}
+
+.mainNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 14rem;
+  height: 14rem;
+  margin: 2.4rem 0;
+  border-radius: 100px;
+  background: linear-gradient(
+    to bottom right,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 81%, 54%, 0.1)
+  );
+}
+
+.circleContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5.6rem;
+  color: var(--white-neutral);
+  font-weight: 800;
+  line-height: 72px;
+}
+
+.circleContent span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--lavender-neutral);
+  line-height: 20.85px;
+}
+
+.titleGreat {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--white-neutral);
+  line-height: 31.27px;
+}
+
+.titleDescription {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin: 0.8rem 5.7rem 4rem 5.8rem;
+  line-height: 20.85px;
+  color: var(--lavender-neutral);
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
