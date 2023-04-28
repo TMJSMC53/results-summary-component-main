@@ -3,7 +3,7 @@
   --clr-red: hsla(0, 100%, 67%, 1);
   --clr-orangey: hsla(40, 100%, 56%, 1);
   --clr-teal: hsla(166, 100%, 37%, 1);
-  --blue: hsla(234, 85%, 45%, 1);
+  --clr-blue: hsla(234, 85%, 45%, 1);
 
   /* Gradients */
 
@@ -144,4 +144,100 @@ h1 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Summary Section */
+.summarySection h2 {
+  margin: 2.4rem 0 2.4rem 3.2rem;
+  font-size: 1.8rem;
+  color: var(--dk-gray-blue-neutral);
+}
+.summaryContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem 0 3rem;
+
+  /* border: 5px solid teal;*/
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.7rem 1.6rem 1.8rem 1.6rem;
+  margin-bottom: 1.6rem;
+  border-radius: 12px;
+}
+
+.box p {
+  width: 31.5rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding-left: 1.2rem;
+}
+
+.box > span {
+  width: 6.4rem;
+  margin-left: auto;
+  font-size: 1.6rem;
+}
+
+.resultsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--dk-gray-blue-neutral);
+  font-weight: 700;
+  margin-right: 0.8rem;
+
+  font-size: 1.6rem;
+}
+.results {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--dk-gray-blue-neutral);
+  opacity: 0.5;
+  margin-left: 0.8rem;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.reaction p {
+  color: var(--clr-red);
+}
+.memory p {
+  color: var(--clr-orangey);
+}
+.verbal p {
+  color: var(--clr-teal);
+}
+.visual p {
+  color: var(--clr-blue);
+}
+
+/* Button */
+.btn {
+  width: 315px;
+  font-size: 1.8rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.8rem;
+  border-radius: 12.8rem;
+  border: none;
+  margin: 0.8rem 3rem 3rem 3rem;
+
+  background-color: var(--dk-gray-blue-neutral);
+  color: var(--white-neutral);
+  line-height: 23.45px;
 }
